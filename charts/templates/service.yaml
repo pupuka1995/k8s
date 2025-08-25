@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Release.Name }}-service
   labels:
-    env  : prod
+    env  : test
     owner: DenisAstahov
 spec:
   selector:

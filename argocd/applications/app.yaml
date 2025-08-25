@@ -9,13 +9,13 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   # The project the application belongs to.
-  project: default
+  project: k8s-dev
 
   # Source of the application manifests
   source:
     repoURL: https://github.com/pupuka1995/k8s.git  # Can point to either a Helm chart repo or a git repo.
     targetRevision: main  # For Helm, this refers to the chart version.
-    path: charts/templates  # This has no meaning for Helm charts pulled directly from a Helm repo instead of git.
+    path: charts  # This has no meaning for Helm charts pulled directly from a Helm repo instead of git.
 
   # Destination cluster and namespace to deploy the application
   destination:

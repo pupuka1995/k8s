@@ -17,5 +17,9 @@ spec:
       containers:
         - name : {{ .Release.Name }}-web
           image: {{ .Values.container.image }}
-          ports:
-            - containerPort: 80
+          livenessProbe:
+            exec:
+              command:
+                - echo "true"
+            initialDelaySeconds: 5
+            periodSeconds: 5

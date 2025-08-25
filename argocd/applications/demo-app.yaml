@@ -24,7 +24,7 @@ spec:
       # Helm values files for overriding values in the helm chart
       # The path is relative to the spec.source.path directory defined above
       valueFiles:
-      - values-vaules.yaml
+      - values-values.yaml
 
       # Values file as block file
       values: |

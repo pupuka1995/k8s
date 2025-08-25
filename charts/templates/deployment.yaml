@@ -5,7 +5,7 @@ metadata:
   labels:
     app : {{ .Release.Name }}-deployment
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: 2
   selector:
     matchLabels:
       project: {{ .Release.Name }}
